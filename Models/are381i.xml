@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>ArE381I.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/ArE381I/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+<!-- Make Clickable -->
+<animation>
+   <type>pick</type>
+   <object-name>fuselage</object-name>
+   <object-name>Sphere</object-name>
+   <action>
+       <button>0</button>
+       <repeatable>false</repeatable>
+       <binding>
+      <command>property-toggle</command>
+      <property>controls/scenery/object/sam/SA-2/clicked</property>
+       </binding>
+   </action>
+</animation>
+  <animation>
+    <!-- Objets opaques -->
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>fuselage2</object-name>
+    <object-name>Cone_0</object-name>
+    <object-name>Cone.001</object-name>
+    <object-name>Cone.002</object-name>
+    <object-name>Cube.003</object-name>
+    <object-name>Cube.004</object-name>
+    <object-name>head</object-name>
+    <object-name>ailes</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>ailes3</object-name>
+    <object-name>aileronL_1</object-name>
+    <object-name>aileronR_1</object-name>
+    <object-name>aileronL_2</object-name>
+    <object-name>aileronR_2</object-name>
+    <object-name>derive</object-name>
+    <object-name>derive2</object-name>
+    <object-name>rudderL</object-name>
+    <object-name>rudderR</object-name>
+    <object-name>elevator</object-name>
+    <object-name>elevator_0</object-name>
+    <object-name>antenne</object-name>
+    <object-name>cable</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>boutsmoteurs</object-name>
+    <object-name>armes</object-name>
+    <object-name>CylinderL</object-name>
+    <object-name>CylinderR</object-name>
+    <object-name>skid_0</object-name>
+    <object-name>skid_1</object-name>
+    <object-name>Plane</object-name>
+
+
+    <!-- Objets transparents -->
+    <object-name>Sphere</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>Sphere</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Sphere</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>fuselage2</object-name>
+    <object-name>Cone_0</object-name>
+    <object-name>Cone.001</object-name>
+    <object-name>Cone.002</object-name>
+    <object-name>Cube.003</object-name>
+    <object-name>Cube.004</object-name>
+    <object-name>head</object-name>
+    <object-name>ailes</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>ailes3</object-name>
+    <object-name>aileronL_1</object-name>
+    <object-name>aileronR_1</object-name>
+    <object-name>aileronL_2</object-name>
+    <object-name>aileronR_2</object-name>
+    <object-name>derive</object-name>
+    <object-name>derive2</object-name>
+    <object-name>rudderL</object-name>
+    <object-name>rudderR</object-name>
+    <object-name>elevator</object-name>
+    <object-name>elevator_0</object-name>
+    <object-name>antenne</object-name>
+    <object-name>cable</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>boutsmoteurs</object-name>
+    <object-name>armes</object-name>
+    <object-name>CylinderL</object-name>
+    <object-name>CylinderR</object-name>
+    <object-name>skid_0</object-name>
+    <object-name>skid_1</object-name>
+    <object-name>Plane</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <!--<texture>texture.png</texture>-->
+    <texture>are381i-01.png</texture>
+
+
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Effets de tir -->
+  <model>
+    <path>Aircraft/ArE381I/Models/effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -1.263 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0.405 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue avant -->
+  <model>
+    <path>Aircraft/ArE381I/Models/effects/ground0.xml</path>
+ 	<condition>
+		<equals>
+			<!--<property>controls/smoke</property>-->
+ 		<property>/instrumentation/doors/crew/position-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+    <offsets>
+      <x-m> -2.628 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.6 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/ArE381I/Models/effects/ground1.xml</path>
+ 	<condition>
+		<equals>
+			<!--<property>controls/smoke</property>-->
+ 		<property>/instrumentation/doors/crew/position-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+   <offsets>
+      <x-m> -1.368 </x-m>
+      <y-m>  0 </y-m>
+      <z-m> -0.6 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/ArE381I/Models/effects/ground2.xml</path>
+	<condition>
+		<equals>
+ 		<property>/instrumentation/doors/crew/position-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+    <offsets>
+      <x-m>  0,892 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  -0.5 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Particules OSG -->
+  <!-- trail -->
+  <model>
+    <path>Aircraft/ArE381I/Models/effects/rocket_smoke.xml</path>
+	<condition>
+		<equals>
+			<property>controls/smoke</property>
+			<value>1</value>
+		</equals>
+	</condition>
+    <offsets>
+      <x-m>  3 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Les flammes -->
+  <model>
+    <path>Aircraft/ArE381I/Models/effects/flammes/flammesG.xml</path>
+	<condition>
+		<equals>
+			<property>controls/smoke</property>
+			<value>1</value>
+		</equals>
+	</condition>
+    <offsets>
+      <x-m>  1.28 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  -0.08 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>elevator</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>11</factor>
+    <center>
+      <!--<x-m>  4.986 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.844 </z-m>-->
+      <x-m>  2.02 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.40 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>rudderR</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>20</factor>
+    <center>
+      <!--<x-m> 5.361 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.957 </z-m>-->
+      <x-m> 2.2 </x-m>
+      <y-m> 1.000 </y-m>
+      <z-m> 0.6 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y>  0.000 </y>
+      <z>  1.000 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>rudderL</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>20</factor>
+    <center>
+      <!--<x-m> 5.361 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.957 </z-m>-->
+      <x-m> 2.2 </x-m>
+      <y-m> -1.000 </y-m>
+      <z-m> 0.6 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y>  0.000 </y>
+      <z>  1.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Animations des ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronL</object-name>
+    <property>/surface-positions/left-aileron-pos-norm</property>
+    <factor>-15.0</factor>
+    <axis>
+      <!--<x1-m> -0.408 </x1-m>
+      <y1-m> -1.333 </y1-m>
+      <z1-m> -0.061 </z1-m>
+      <x2-m> -0.044 </x2-m>
+      <y2-m> -5.032 </y2-m>
+      <z2-m>  0.097 </z2-m>-->
+      <x1-m> -0.044 </x1-m>
+      <y1-m> -1.5 </y1-m>
+      <z1-m>  0.2 </z1-m>
+      <x2-m> -0.044 </x2-m>
+      <y2-m> -3 </y2-m>
+      <z2-m>  0.2 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronR</object-name>
+    <property>/surface-positions/right-aileron-pos-norm</property>
+    <factor>15.0</factor>
+    <axis>
+      <!--<x1-m> -0.408 </x1-m>
+      <y1-m>  3.333 </y1-m>
+      <z1-m> -0.061 </z1-m>
+      <x2-m> -0.044 </x2-m>
+      <y2-m>  5.032 </y2-m>
+      <z2-m>  0.097 </z2-m>-->
+      <x1-m> -0.044 </x1-m>
+      <y1-m>  1.5 </y1-m>
+      <z1-m>  0.2 </z1-m>
+      <x2-m> -0.044 </x2-m>
+      <y2-m>  3 </y2-m>
+      <z2-m>  0.2 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Skid -->
+  <animation>
+    <name>skid</name>
+    <!--<object-name>tourverriere</object-name>
+    <object-name>verriere</object-name>-->
+    <object-name>skid</object-name>
+  </animation>
+
+  <animation>
+    <!--<type>rotate</type>
+    <object-name>skid</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.25 </ind><dep> 10 </dep></entry>
+      <entry><ind> 0.50 </ind><dep> 20 </dep></entry>
+      <entry><ind> 0.75 </ind><dep> 45 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -0.825 </x1-m>
+      <y1-m>  0.288 </y1-m>
+      <z1-m>  0.660 </z1-m>
+      <x2-m> -1.680 </x2-m>
+      <y2-m>  0.288 </y2-m>
+      <z2-m>  0.660 </z2-m>
+    </axis>-->
+    <type>translate</type>
+    <object-name>skid</object-name>
+    <!--<property>controls/canopy/canopy-pos-norm</property>-->
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor>-0.1</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z><!--初期状態がソリを降ろした状態の場合、マイナスで上下（逆はプラス）-->
+    </axis>
+   </animation>
+
+  <!-- Chute -->
+  <model>
+    <path>Aircraft/ArE381I/Models/chute.xml</path>
+	<condition>
+		<equals>
+ 		<property>/controls/gear/brake-parking</property>
+ 		<!--<property>/instrumentation/doors/crew/position-norm</property>-->
+			<value>1</value>
+		</equals>
+	</condition>
+    <offsets>
+      <x-m>  1.28 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  5 </z-m>
+    </offsets>
+ </model>
+
+	<!--<nasal>
+	  
+
+		<load>
+			<![CDATA[
+			print("Loading Ar E.381 ", cmdarg().getPath());
+
+			
+			
+
+############################################
+#RAFALEB INITIALIZER
+			var object_init = func() {
+				# Datas of this object are under: cmdarg().getPath()
+				var thisNodeName = cmdarg().getPath();
+				var thisNode = props.globals.getNode(thisNodeName);
+				
+         ########################################################################
+        ########################################################################
+        # INITIALIZE BOMBABLE
+        # 
+        # Initialize constants and main routines for maintaining altitude
+        # relative to ground-level, relocating after file/reset, and 
+        # creating bombable/shootable objects.
+        # 
+        # These routines are found in FG/nasal/bombable.nas
+        #  
+        ########################################################################               
+        # INITIALIZE BOMBABLE Object
+        # This object will be slurped in the object's node as a child
+        # node named "bombable".                 
+        # All distances are specified in meters.
+        # All altitudes are relative to current ground level at the object's 
+        # location
+        # 
+         
+        thisNodeName = cmdarg().getPath(); 
+
+        var bombableObject = {  
+          
+          
+          objectNodeName : thisNodeName,
+          objectNode : props.globals.getNode(thisNodeName),
+          updateTime_s : 1/3, #time, in seconds, between the updates that 
+          #keep the object at its AGL. Tradeoff is high-speed updates look more
+          #realistic but slow down the framerate/cause jerkiness.  Faster-moving
+          #objects will need more frequent updates to look realistic.
+
+		                        
+          #########################################                              
+          # ALTITUDE DEFINITIONS
+          # 
+          # All altitudes are in meters                    
+          #         
+          altitudes : {	
+            wheelsOnGroundAGL_m : 1 , #altitude correction to add to your aircraft or ship that is needed to put wheels on ground (or, for a ship, make it float in the water at the correct level).  For most objects this is 0 but some models need a small correction to place them exactly at ground level
+            
+            minimumAGL_m : 33, #minimum altitude above ground level this object is allowed to fly
+            maximumAGL_m : 5000, #maximum altitude AGL this object is allowed to fly, ie, operational ceiling	    
+            crashedAGL_m : -0.85, #altitude AGL when crashed.  Ships will sink to this level, aircraft or vehicles will sink into the ground as landing gear collapses or tires deflate. Should be negative, even just -0.001.
+          },
+          #  
+          #########################################
+          # VELOCITIES DEFINITIONS
+          # 
+          velocities : {               
+            maxSpeedReduce_percent : 0.5, #max % to reduce speed, per step, when damaged
+            minSpeed_kt : 48, #minimum speed to reduce to when damaged.  Ground vehicles and ships might stop completely when damaged but aircraft will need a minimum speed so they keep moving until they hit the ground.
+    
+            damagedAltitudeChangeMaxRate_meterspersecond : 6.5, #max rate to sink or fly downwards when damaged, in meters/second
+          },
+          #  
+          #########################################
+          # EVASION DEFINITIONS
+          # 
+          # The evasion system makes the AI aircraft dodge when they come under
+          # fire. 
+          evasions : {               
+            dodgeDelayMax_sec : 15, #max time to delay/wait between dodges
+            dodgeDelayMin_sec : 5, #minimum time to delay/wait between dodges
+            dodgeMax_deg : 000, #Max amount to turn when dodging
+            dodgeMin_deg : 00, #minimum amount to turn when dodging
+            dodgeROverLPreference_percent : 20, # Preference for right turns vs. left when dodging.  90% means 90% right turns, 50% means 50% right turns.
+            dodgeAltMin_m : -001, #Aircraft will begin to move up or down 
+            dodgeAltMax_m : 001, #Max & Min are relative to current alt  
+          },
+          #  
+          #########################################
+          # DIMENSION DEFINITIONS
+          #
+          # All dimensions are in meters          
+          #           
+          dimensions : {                  
+            width_m : 10,  #width of your object, ie, for aircraft, wingspan
+            length_m : 19, #length of your object, ie, for aircraft, distance nose to tail
+            height_m : 6, #height of your object, ie, for aircraft ground to highest point when sitting on runway
+            damageRadius_m : 6, #hits within this distance of the 
+                                #center of object to be considered direct hits
+          },
+          #
+          #########################################
+          # VULNERABILITIES DEFINITIONS        
+          #
+          vulnerabilities : {                   
+            damageVulnerability : 1, #Vulnerability to damage from armament, 1=normal M1 tank; higher to make objects easier to kill and lower to make them more difficult.  This is a multiplier, so 5 means 5X easier to kill than an M1, 1/5 means 5X harder to kill. 
+            
+            engineDamageVulnerability_percent : 3, #Chance that a small-caliber machine-gun round will damage the engine.       
+            
+            fireVulnerability_percent : 20, #Vulnerability to catching on fire. 100% means even the slightest impact will set it on fire; 20% means quite difficult to set on fire; 0% means set on fire only when completely damaged; -1% means never set on fire.                          
+            
+            fireDamageRate_percentpersecond : 0.2, #Amount of damage to add, per second, when on fire.  100%=completely damaged.
+            
+            fireExtinguishMaxTime_seconds : 100, #Once a fire starts, for this many seconds there is a chance to put out the fire; fires lasting longer than this won't be put out until the object burns out.
+            
+            fireExtinguishSuccess_percentage : 10, #Chance of the crew putting out the fire within the MaxTime above.
+            
+            explosiveMass_kg : 735 , #mass of the object in KG, but give at least a 2-10X bonus to anything carrying flammables or high explosives.
+          },
+          #
+          #########################################
+          # LIVERY DEFINITIONS
+          #
+          # Path to livery files to use at different damage levels.
+          # Path is relative to the AI aircraft's directory.
+          # The object will start with the first livery listed and 
+          # change to succeeding liveries as the damage
+          # level increases. The final livery should indicate full damage/
+          # object destroyed.        
+          # 
+          # If you don't want to specify any special liveries simply set 
+          # damageLivery : nil and the object's normal livery will be used.  
+          #                                                            
+          damageLiveries : {
+            damageLivery : [  ]                        
+          },
+                            
+        };
+
+        #########################################
+        # INITIALIZE ROUTINES
+        # 
+        # OVERALL INITIALIZER: Needed to make all the others work
+        bombable.initialize ( bombableObject );
+        #
+        # LOCATION: Relocate object to maintain its position after file/reset       
+        # (best not used for airplanes)
+        # bombable.location_init ( thisNodeName );
+        #
+        # GROUND: Keep object at altitude relative to ground level
+        bombable.ground_init ( thisNodeName );
+        #
+        # BOMBABLE: Make the object bombable/damageable        
+        var bombableListenerid = bombable.bombable_init ( thisNodeName );
+        #
+        # SMOKE/CONTRAIL: Start a flare, contrail, smoke trail, or exhaust 
+        # trail for the object.
+        # Smoke types available: flare, jetcontrail, pistonexhaust, smoketrail,
+        # damagedengine                        
+        bombable.startSmoke("pistonexhaust", thisNodeName );
+        #
+        # END INITIALIZE BOMBABLE
+        ########################################################################
+        ########################################################################                
+	      
+
+        
+			}
+			
+			object_init();
+			]]>
+		</load>
+		<unload>
+			<![CDATA[
+			print("Unload Ar E.381");
+
+
+      ########################################################################
+      ########################################################################                
+			# BOMBABLE DESTRUCTORS      			
+			# 			
+      var objectNodeName= cmdarg().getPath();  
+      bombable.ground_del( objectNodeName );
+      bombable.location_del (objectNodeName);
+      bombable.bombable_del( objectNodeName , bombableListenerid );
+      #
+	    ########################################################################
+      ########################################################################                
+      
+    
+
+			]]>
+		</unload>
+ </nasal>-->  
+
+
+</PropertyList>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+   <!-- rz65 -->
+   <key n="10">
+	<name>Ctrl-J</name>
+	<desc>rocket</desc>
+	<binding>
+	<command>property-assign</command>
+	<property>/controls/armament/station[3]/missiles</property>
+	<value type="bool">1</value>
+	</binding>
+   </key>
+
+   <!-- separate -->
+   <key n="11">
+	<name>Ctrl-K</name>
+	<desc>parasite</desc>
+	<binding>
+	<command>property-assign</command>
+	<property>/controls/armament/station[0]/missiles</property>
+	<value type="bool">1</value>
+	</binding>
+   </key>
+
+   <!-- open/close landing skid -->
+   <key n="67">
+    <name>C</name>
+    <desc>Passenger door</desc>
+    <binding>
+     <command>nasal</command>
+     <script>ArE381.skidystem.passengerexport();</script>
+    </binding>
+   </key>
+
+   <key n="99">
+    <name>c</name>
+    <desc>Crew door</desc>
+    <binding>
+     <command>nasal</command>
+     <script>ArE381.skidsystem.crewexport();</script>
+    </binding>
+   </key>
+
+   <!-- Smoke -->
+   <key n="68">
+    <name>D</name>
+    <desc>Start smoke</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>controls/smoke</property>
+     <value>0</value>
+    </binding>
+   </key>
+
+   <key n="100">
+    <name>d</name>
+    <desc>Stop smoke</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>controls/smoke</property>
+     <value>1</value>
+    </binding>
+   </key>
+
+   <!-- gun -->
+   <key n="101">
+     <name>e</name>
+     <desc>Guns</desc>
+     <binding>
+       <command>nasal</command>
+       <script>guns.fire_MG()</script>
+     </binding>
+     <mod-up>
+       <binding>
+         <command>nasal</command>
+         <script>guns.stop_MG()</script>
+       </binding>
+     </mod-up>
+   </key>
+
+</PropertyList>
+

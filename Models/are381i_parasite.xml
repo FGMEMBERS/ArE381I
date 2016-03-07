@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/ArE381I/Models/are381i.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  -0.2 </z-m>
+      <pitch-deg> 0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+	<model>
+		<!--<path>Aircraft/AR-234/Models/ar234-C.xml</path>-->
+		<path>Aircraft/ArE381I/Models/ar234c.xml</path>
+		<name>separate</name>
+		<offsets>
+			<x-m>-0.6</x-m>
+			<y-m>0</y-m>
+			<z-m>1.4</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+
+	<animation>
+		<type>select</type>
+		<object-name>separate</object-name>
+		<condition>
+			<not>
+				<equals>
+					<property>controls/armament/station[0]/missiles</property>
+					<value>1</value>
+				</equals>
+			</not>
+		</condition>
+	</animation>
+
+</PropertyList>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="are381i_parasite-base.xml">
+
+ <sim>
+
+  <description>Ar.E381I (YASim)</description>
+  <flight-model>yasim</flight-model>
+  <aero>are381i_parasite-yasim</aero>
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/ArE381I/Models/submodels.xml</path>
+      <!--<path>Aircraft/ArE381I/Models/effects/guns/submodels.xml</path>-->
+    </submodels>
+
+ </sim>
+
+ <!--<yasim>
+   <me262>
+     <pilot-lb>128</pilot-lb>
+   </me262>
+ </yasim>-->
+
+</PropertyList>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="are381ii-yasim-cnf.xml">
+
+  <sim>
+    <description>Ar E.381II</description>
+    <author>virt_fly</author>
+    <status>development</status>
+  </sim>
+
+</PropertyList>
+

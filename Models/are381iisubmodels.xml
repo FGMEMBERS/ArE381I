@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <!-- tracer -->
+  <submodel>
+    <name>tracer</name>
+    <model>Aircraft/ArE381I/Models/effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -5.363 </x-offset>
+    <y-offset>  0.0 </y-offset>
+    <z-offset>  0.414 </z-offset>
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/gun</impact-report>
+		<submodel-path>Aircraft/ArE381I/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+  </submodel>
+
+  <!-- rocket -->
+	<submodel>
+		<name>rocket1</name>
+		<model>Aircraft/ArE381I/Models/rocket.xml</model>
+		<trigger>controls/armament/station[3]/missiles</trigger>
+		<speed>500</speed>
+		<repeat>false</repeat>
+		<count>1</count>
+		<x-offset> 0</x-offset>
+		<y-offset>-2.840</y-offset>
+		<z-offset> 0.210</z-offset>
+		<yaw-offset>-3</yaw-offset>
+		<pitch-offset>0</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+　　　　　　　　 <buoyancy>32.0</buoyancy>
+		<cd>0</cd>
+　　　　　　　　 <life>5</life>
+		<!--<impact>true</impact>
+		<impact-reports>sim/ai/aircraft/impact/droptank</impact-reports>-->
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>ai/models/model-impact</impact-report>
+		<submodel-path>Aircraft//ArE381I/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+	</submodel>
+	<submodel>
+		<name>rocket2</name>
+		<model>Aircraft/ArE381I/Models/rocket.xml</model>
+		<trigger>controls/armament/station[3]/missiles</trigger>
+		<speed>500</speed>
+		<repeat>false</repeat>
+		<count>1</count>
+		<x-offset> 0</x-offset>
+		<y-offset>-2.300</y-offset>
+		<z-offset> 0.210</z-offset>
+		<yaw-offset>-1</yaw-offset>
+		<pitch-offset>2</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+　　　　　　　　 <buoyancy>32.0</buoyancy>
+		<cd>0</cd>
+　　　　　　　　 <life>5</life>
+		<!--<impact>true</impact>
+		<impact-reports>sim/ai/aircraft/impact/droptank</impact-reports>-->
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>ai/models/model-impact</impact-report>
+		<submodel-path>Aircraft//ArE381I/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+	</submodel>
+	<submodel>
+		<name>rocket3</name>
+		<model>Aircraft/ArE381I/Models/rocket.xml</model>
+		<trigger>controls/armament/station[3]/missiles</trigger>
+		<speed>500</speed>
+		<repeat>false</repeat>
+		<count>1</count>
+		<x-offset> 0</x-offset>
+		<y-offset>-1.760</y-offset>
+		<z-offset> 0.210</z-offset>
+		<yaw-offset>-1</yaw-offset>
+		<pitch-offset>-2</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+　　　　　　　　 <buoyancy>32.0</buoyancy>
+		<cd>0</cd>
+　　　　　　　　 <life>5</life>
+		<!--<impact>true</impact>
+		<impact-reports>sim/ai/aircraft/impact/droptank</impact-reports>-->
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>ai/models/model-impact</impact-report>
+		<submodel-path>Aircraft//ArE381I/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+	</submodel>
+	<submodel>
+		<name>rocket4</name>
+		<model>Aircraft/ArE381I/Models/rocket.xml</model>
+		<trigger>controls/armament/station[3]/missiles</trigger>
+		<speed>500</speed>
+		<repeat>false</repeat>
+		<count>1</count>
+		<x-offset> 0</x-offset>
+		<y-offset> 1.760</y-offset>
+		<z-offset> 0.210</z-offset>
+		<yaw-offset>1</yaw-offset>
+		<pitch-offset>2</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+　　　　　　　　 <buoyancy>32.0</buoyancy>
+		<cd>0</cd>
+　　　　　　　　 <life>5</life>
+		<!--<impact>true</impact>
+		<impact-reports>sim/ai/aircraft/impact/droptank</impact-reports>-->
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>ai/models/model-impact</impact-report>
+		<submodel-path>Aircraft//ArE381I/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+	</submodel>
+	<submodel>
+		<name>rocket5</name>
+		<model>Aircraft/ArE381I/Models/rocket.xml</model>
+		<trigger>controls/armament/station[3]/missiles</trigger>
+		<speed>500</speed>
+		<repeat>false</repeat>
+		<count>1</count>
+		<x-offset> 0</x-offset>
+		<y-offset> 2.300</y-offset>
+		<z-offset> 0.210</z-offset>
+		<yaw-offset>1</yaw-offset>
+		<pitch-offset>-2</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+　　　　　　　　 <buoyancy>32.0</buoyancy>
+		<cd>0</cd>
+　　　　　　　　 <life>5</life>
+		<!--<impact>true</impact>
+		<impact-reports>sim/ai/aircraft/impact/droptank</impact-reports>-->
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>ai/models/model-impact</impact-report>
+		<submodel-path>Aircraft//ArE381I/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+	</submodel>
+	<submodel>
+		<name>rocket6</name>
+		<model>Aircraft/ArE381I/Models/rocket.xml</model>
+		<trigger>controls/armament/station[3]/missiles</trigger>
+		<speed>500</speed>
+		<repeat>false</repeat>
+		<count>1</count>
+		<x-offset> 0</x-offset>
+		<y-offset> 2.840</y-offset>
+		<z-offset> 0.210</z-offset>
+		<yaw-offset>3</yaw-offset>
+		<pitch-offset>0</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+　　　　　　　　 <buoyancy>32.0</buoyancy>
+		<cd>0</cd>
+　　　　　　　　 <life>5</life>
+		<!--<impact>true</impact>
+		<impact-reports>sim/ai/aircraft/impact/droptank</impact-reports>-->
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>ai/models/model-impact</impact-report>
+		<submodel-path>Aircraft//ArE381I/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+	</submodel>
+
+  <!-- separate -->
+	<!--<submodel>
+		<name>separate</name>
+		<model>Aircraft/ArE381I/Models/ar234c.xml</model>
+		<trigger>controls/armament/station[0]/missiles</trigger>
+		<speed>-10</speed>
+		<repeat>false</repeat>
+                <count>1</count>
+		<x-offset>2</x-offset>
+		<y-offset>0</y-offset>
+		<z-offset>20</z-offset>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset>1</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+               <buoyancy>33.0</buoyancy>
+		<cd>0</cd>
+               <life>15</life>
+	</submodel>-->
+
+</PropertyList>

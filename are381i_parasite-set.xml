@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="are381i_parasite-yasim-cnf.xml">
+
+  <sim>
+    <description>Ar E.381I_parasite</description>
+    <author>virt_fly</author>
+    <status>development</status>
+
+    <!--<submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/ArE381I/Models/submodels.xml</path>
+    </submodels>-->
+  </sim>
+
+</PropertyList>
+
